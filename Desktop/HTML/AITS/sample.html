@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>College Event Management</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f4f7fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+/* Section Styles */
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+section h2 {
+  color: #004080;
+  margin-bottom: 20px;
+}
+
+section p, section ul {
+  font-size: 1.1rem;
+}
+
+/* Schedule List */
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+}
+
+form input {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #004080;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0066cc;
+}
+
+/* Footer */
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.95rem;
+}
+</style>
+</head>
+
+<body>
+  <header>
+    <h1>Annamacharya College Event 2025</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#register">Student Register</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main style="background-image: url('background.jpg'); background-size: 60%;background-repeat: no-repeat; background-position: center; padding: 40px; color: black;">
+  <section id="about">
+    <h2>About the Event</h2>
+    <p>Join us for a celebration of talent, innovation, and learning. Open for all students and faculty members.</p>
+  </section>
+
+  <section id="schedule">
+    <h2>Event Schedule</h2>
+    <ul>
+      <li>10:00 AM - Inauguration</li>
+      <li>11:00 AM - Technical Quiz</li>
+      <li>12:00 PM - Coding Contest</li>
+      <li>1:00 PM - Lunch Break</li>
+      <li>3:00 PM - Games</li>
+      <li>07:00 PM - Cultural Events</li>
+      <li>10:00 PM - Event End</li>
+    </ul>
+  </section>
+
+  <section id="register">
+    <h2>Student Register Form </h2>
+    <form>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="text" placeholder="College Name" required />
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: Annamacharya 950@college.edu</p>
+    <p>Phone: +91 9505657694</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Annamacharya College Event. A
+ll rights reserved.</p>
+  </footer>
+</body>
+</html>

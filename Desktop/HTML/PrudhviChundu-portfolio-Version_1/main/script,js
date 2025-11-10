@@ -1,0 +1,31 @@
+console.log("✅ Script loaded successfully");
+
+// Dark/Light Theme Toggle
+const toggle = document.getElementById('theme-toggle');
+const body = document.body;
+
+toggle.addEventListener('click', () => {
+  body.classList.toggle('light');
+  if (body.classList.contains('light')) {
+    toggle.textContent = '🌙';
+    document.documentElement.style.setProperty('--bg-gradient', 'linear-gradient(135deg, #e3f2fd, #bbdefb)');
+    document.documentElement.style.setProperty('--text-color', '#0a192f');
+    document.documentElement.style.setProperty('--accent', '#1976d2');
+  } else {
+    toggle.textContent = '☀️';
+    document.documentElement.style.setProperty('--bg-gradient', 'linear-gradient(135deg, #0a192f, #112240, #1e3a8a)');
+    document.documentElement.style.setProperty('--text-color', '#f8f8f8');
+    document.documentElement.style.setProperty('--accent', '#64ffda');
+  }
+});
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
+  const mainContent = document.getElementById("main-content");
+
+  // Delay to show loader for at least 2 seconds (optional)
+  setTimeout(() => {
+    loader.classList.add("hidden");
+    mainContent.style.display = "block";
+  }, 2000);
+});
+
